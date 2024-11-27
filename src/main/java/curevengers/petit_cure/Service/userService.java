@@ -1,7 +1,5 @@
 package curevengers.petit_cure.Service;
 
-
-import curevengers.petit_cure.Dto.AuthVO;
 import curevengers.petit_cure.Dto.memberDTO;
 
 import java.util.List;
