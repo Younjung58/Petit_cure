@@ -48,9 +48,10 @@ public class testhome {
 
     // QA게시판 글쓰기 저장
     @PostMapping(value = "/qasave")
-    public String qasave(@ModelAttribute QABoardDTO dto) {
+    public String qasave(@ModelAttribute QABoardDTO dto, Model model) {
         testservice.addQABoard(dto);
-        return "Q&A";
+        model.addAttribute("qaBoard", dto.getNo());
+        return "redirect:/qanda";
     }
 
 
@@ -72,9 +73,10 @@ public class testhome {
         if (pagedto.getPage() == null) {
             pagedto.setPage(1);
         }
-        pagedto.setTotalCount(testservice.totalCountBoard());
+        pagedto.setTotalCount(testservice.totalQACountBoard());
         List<QABoardDTO> QABoardList = testservice.getAllQABoards(pagedto);
         model.addAttribute("qalist", QABoardList);
+        model.addAttribute("pageDTO", pagedto);
         return "Q&A";
     }
 
@@ -91,11 +93,13 @@ public class testhome {
 
     //    // Q&A게시판 글 자세히 보기
     @GetMapping(value = "/qaview")
-    public String QAboardView(@RequestParam("no") String no, Model model) {
+    public String QAboardView(@RequestParam("no") String no, Model model, @ModelAttribute commentDTO commentdto) {
         QABoardDTO board = testservice.getQABoardNo(no);
-
+        List<commentDTO> commentList = testservice.getComment(no);
+        System.out.println("QABoard: " + board); // Q&A 게시글 확인
+        System.out.println("Comment List: " + commentList);
         model.addAttribute("dto", board);
-
+        model.addAttribute("commentList", commentList);
         return "qaview";
     }
 
@@ -170,6 +174,14 @@ public class testhome {
         return "dpcheck";
     }
 
+    @GetMapping(value = "/depresult")
+    public String depresult() throws Exception {
+        return "ResultSheet";
+    }
+
+
+
+
     @GetMapping(value = "/searchTitle")
     public String searchBoard(@RequestParam("title") String title, Model model) {
         List<freeBoardDTO> board = testservice.getsearchFreeBoards(title);
@@ -207,5 +219,14 @@ public class testhome {
         return "company";
     }
 
+    // 댓글 기능
+    @PostMapping(value = "/comment")
+    public String reply(@ModelAttribute commentDTO dto) {
+
+        testservice.addComment(dto);
+//        List<commentDTO> commentList = testservice.getAllComments(dto);
+//        model.addAttribute("commentList", commentList);
+        return "redirect:/qanda";
+    }
 }
 
