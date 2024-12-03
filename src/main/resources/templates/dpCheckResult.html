@@ -62,7 +62,11 @@
 </aside>
 
 <aside class="action" style="padding-top: 100px;">
-  <h1>DB연동 후 값을 가져와서 하시오!</h1>
+  <h1 th:if="${dto.getResult()<=4}">우울증이 아닙니다.</h1>
+  <h1 th:if="${dto.getResult()<=9 && dto.getResult()>=5}">가벼운 우울증 입니다.</h1>
+  <h1 th:if="${dto.getResult()<=14 && dto.getResult()>=10}">중간 정도 우울증 입니다.</h1>
+  <h1 th:if="${dto.getResult()<=19 && dto.getResult()>=15}">중간 정도 우울증이나 심한 상태 입니다.</h1>
+  <h1 th:if="${dto.getResult()<=27 && dto.getResult()>=20}">심한 정도 우울증 입니다.</h1>
 </aside>
 
 <table>
@@ -74,10 +78,10 @@
     <th>20~27점</th>
   </tr>
   <tr>
-    <td>우울 증 아님</td>
+    <td>우울증 아님</td>
     <td>가벼운 우울증</td>
     <td>중간 정도 우울증</td>
-    <td>중간정도 우울증<br>(심함/치료요함)</td>
+    <td>중간 정도 우울증 <br> (심함/치료요함)</td>
     <td>심한 정도 우울증<br>(적극적인 치료가 필요함)</td>
   </tr>
 
@@ -95,12 +99,8 @@
 <a href="/depboard"><button style="font-size: 20px">우울증 게시판으로 이동!</button></a>
 <div th:include="main::footer"></div>
 </body>
+<div th:include="main::footer"></div>
 </html>
-<!--<script>-->
-<!--  function test() {-->
-<!--    confirm("수정이 완료되었습니다.")-->
-<!--  }-->
-<!--  const submenuList = document.querySelectorAll(".dropdown");-->
 
 
 <script>
@@ -135,7 +135,7 @@
   });
 </script>
 
-<div th:include="main::footer"></div>
+
 
 
 

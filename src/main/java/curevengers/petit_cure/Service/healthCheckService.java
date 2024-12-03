@@ -7,11 +7,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public interface healthCheckService {
     public void insert(healthCheckDTO dto) throws Exception;
 
-    public  healthCheckDTO showOne(healthCheckDTO dto) throws Exception;
+    public healthCheckDTO showOne(healthCheckDTO dto) throws Exception;
 
     public healthCheckDTO selectOne(String id, String date) throws Exception;
 
