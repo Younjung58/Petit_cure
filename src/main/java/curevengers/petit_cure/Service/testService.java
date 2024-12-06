@@ -58,13 +58,11 @@ public interface testService {
 
     void updateQAReport(int no);
 
-    void insertAttach(freeboard_attachDTO attachDTO);
+    // 자유게시판 글 수정
+    void updateBoard(freeBoardDTO dto);
 
-    void insertQAAttach(qaboard_attachDTO qaattachDTO);
-
-    List<freeboard_attachDTO> getAttach(String no);
-
-    List<qaboard_attachDTO> getQAAttach(String no);
+    // Q&A게시판 글 수정
+    void updateQABoard(QABoardDTO dto);
 
     // 자유게시판 글 삭제
     void deleteBoard(String no);

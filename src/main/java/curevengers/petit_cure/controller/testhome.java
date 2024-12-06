@@ -10,21 +10,16 @@ import curevengers.petit_cure.Service.dpBoardService;
 import curevengers.petit_cure.Service.dpCheckService;
 import curevengers.petit_cure.Service.healthCheckService;
 import curevengers.petit_cure.Service.testService;
-import curevengers.petit_cure.common.util.FileDataUtil;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.UrlResource;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,9 +41,6 @@ public class testhome {
     @Autowired
     dpBoardService dpboardservice;
 
-    @Autowired
-    FileDataUtil filedatautil;
-
     @GetMapping(value = "/")
     public String home() {
         return "main";
@@ -62,50 +54,23 @@ public class testhome {
 
     // 자유게시판 글쓰기 저장
     @PostMapping(value = "/save")
-    public String save(@ModelAttribute freeBoardDTO dto, MultipartFile[] file, Model model, freeboard_attachDTO attachDTO) throws IOException {
-//        System.out.println(file.length);
-        String[] newFileName = filedatautil.fileUpload(file);
-//        System.out.println(newFileName + "kkkkkkkk");
-        dto.setNewFileName(newFileName);
+    public String save(@ModelAttribute freeBoardDTO dto, Model model) {
         testservice.addFreeBoard(dto);
-        String freeboard_no = dto.getNo();
-        for (int i = 0; i < file.length; i++) {
-            if (!file[i].isEmpty()) {
-                attachDTO = new freeboard_attachDTO();
-                attachDTO.setFreeboard_no(freeboard_no);
-                attachDTO.setFilename(newFileName[i]);
-                testservice.insertAttach(attachDTO);
-            }
-        }
         model.addAttribute("freeBoardDTO", dto.getNo());
-        model.addAttribute("attachDTO", attachDTO);
-//        model.addAttribute("dto", dto);
         return "redirect:/freeboard";
     }
 
     // QA게시판 글쓰기 저장
     @PostMapping(value = "/qasave")
-    public String qasave(@ModelAttribute QABoardDTO dto, MultipartFile[] file, Model model, qaboard_attachDTO qaattachDTO) throws IOException {
-        String[] newFileName = filedatautil.fileUpload(file);
-        dto.setNewFileName(newFileName);
+    public String qasave(@ModelAttribute QABoardDTO dto, Model model) {
         testservice.addQABoard(dto);
-        String qaboard_no = dto.getNo();
-        for (int i = 0; i < file.length; i++) {
-            if (!file[i].isEmpty()) {
-                qaattachDTO = new qaboard_attachDTO();
-                qaattachDTO.setQaboard_no(qaboard_no);
-                qaattachDTO.setFilename(newFileName[i]);
-                testservice.insertQAAttach(qaattachDTO);
-            }
-        }
         model.addAttribute("qaBoard", dto.getNo());
-        model.addAttribute("qaattachDTO", qaattachDTO);
         return "redirect:/qanda";
     }
 
     // 우울증 게시판 글쓰기 저장
     @PostMapping(value = "/dpsave")
-    public String dpsave(@ModelAttribute dpBoardDTO dto, MultipartFile[] file, Model model, dpboard_attachDTO dpattachDTO) throws Exception {
+    public String dpsave(@ModelAttribute dpBoardDTO dto) throws Exception {
         dpboardservice.insert(dto);
         return "redirect:/depboard";
     }
@@ -151,33 +116,31 @@ public class testhome {
 
     // 자유게시판 글 자세히 보기
     @GetMapping(value = "/view")
-    public String boardView(@RequestParam("no") String no, Model model, @ModelAttribute freecommentDTO freecommendto, freeboard_attachDTO attachdto) {
+    public String boardView(@RequestParam("no") String no, Model model, @ModelAttribute freecommentDTO freecommendto) {
         freeBoardDTO board = testservice.getBoardNo(no);
         testservice.updateVisit(Integer.parseInt(no));
         List<freecommentDTO> freecommentFreeList = testservice.getFreeComment(no);
-        List<freeboard_attachDTO> attachList = testservice.getAttach(no);
-        System.out.println("kkkkkk " + attachList);
+//        List<String> attachList=testservice.getAttach(no);
         model.addAttribute("dto", board);
         model.addAttribute("commentFreeList", freecommentFreeList);
-        model.addAttribute("attachList", attachList);
-//        model.addAttribute("attachDTO", attachdto);
+//        model.addAttribute("attachList", attachList);
         return "view";
     }
 
     // Q&A게시판 글 자세히 보기
     @GetMapping(value = "/qaview")
-    public String QAboardView(@RequestParam("no") String no, Model model, @ModelAttribute qacommentDTO qacommentdto, qaboard_attachDTO qaattachdto, @ModelAttribute memberDTO memberdto) {
+    public String QAboardView(@RequestParam("no") String no, Model model, @ModelAttribute qacommentDTO qacommentdto, @ModelAttribute memberDTO memberdto) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String username = authentication.getName();
+
         memberDTO memberDTO = membermapper.getMemberByID(username);
+
         QABoardDTO board = testservice.getQABoardNo(no);
         List<qacommentDTO> qacommentList = testservice.getqaComment(no);
-        List<qaboard_attachDTO> qaattachList = testservice.getQAAttach(no);
-//        System.out.println("QABoard: " + board);
-//        System.out.println("Comment List: " + qacommentList);
+        System.out.println("QABoard: " + board);
+        System.out.println("Comment List: " + qacommentList);
         model.addAttribute("dto", board);
         model.addAttribute("commentList", qacommentList);
-        model.addAttribute("qaattachList", qaattachList);
         model.addAttribute("member", memberDTO);
         return "qaview";
     }
@@ -326,7 +289,7 @@ public class testhome {
 
     // 우울증게시판 검색 기능
     @GetMapping(value = "/searchDPTitle")
-    public String searchDPTitle(@RequestParam("title") String title, Model model) throws Exception {
+    public String searchDPTitle(@RequestParam("title") String title, Model model) throws Exception{
         List<dpBoardDTO> board = dpboardservice.getsearchDPBoards(title);
         model.addAttribute("list", board);
         return "searchDPBoard";
@@ -503,5 +466,4 @@ public class testhome {
         dpboardservice.deletedpBoard(no);
         return "redirect:/depboard";
     }
-
 }

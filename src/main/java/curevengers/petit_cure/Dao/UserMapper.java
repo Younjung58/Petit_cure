@@ -54,8 +54,8 @@ public interface UserMapper {
 
     void updateQAReport(int no);
 
-    void insertAttach(freeboard_attachDTO attachDTO);
-
+    // 자유게시판 글 수정
+    void updateBoard(freeBoardDTO dto);
 
     // Q&A게시판 글 수정
     void updateQABoard(QABoardDTO dto);
@@ -65,12 +65,5 @@ public interface UserMapper {
 
     // Q&A게시판 글 삭제
     void deleteQABoard(String no);
-
-
-    void insertQAAttach(qaboard_attachDTO qaattachDTO);
-
-    List<freeboard_attachDTO> selectAttach(String no);
-
-    List<qaboard_attachDTO> selectQAAttach(String no);
 
 }

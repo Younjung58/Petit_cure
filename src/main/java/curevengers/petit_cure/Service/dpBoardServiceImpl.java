@@ -2,7 +2,6 @@ package curevengers.petit_cure.Service;
 
 import curevengers.petit_cure.Dao.dpBoardMapper;
 import curevengers.petit_cure.Dto.dpBoardDTO;
-import curevengers.petit_cure.Dto.dpboard_attachDTO;
 import curevengers.petit_cure.Dto.dpcommentDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -69,7 +68,5 @@ public class dpBoardServiceImpl implements dpBoardService {
     public List<dpBoardDTO> getsearchDPBoards(String title) throws Exception {
         return dpboardmapper.search(title);
     }
-
-
 
 }
