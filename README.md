@@ -23,5 +23,5 @@
   - 3-4. 마이페이지: 최근 활동 정보 출력을 위한 데이터 정제 및 추출, JS의 테이블 tr-td 생성으로 화면 동적 생성, 회원의 정보 수정 및 삭제를 위한 2차 인증절차 및 url로의 접근 제한 구현</br>
   - 3-5. 관리자모드: spring security통한 authority부여, JS의 테이블 tr-td 생성으로 화면 동적 생성, 관리자가 조회할 수 있는 데이터의 커스텀 및 정제</br>
 
-  <h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 PPT를 제작하였습니다. (ppt링크 하단 첨부)</h3>
-  <h3>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h3>
+  <h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 PPT를 제작하였습니다. </br>(ppt링크 하단 첨부)</h3>
+  <h5>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h5>
