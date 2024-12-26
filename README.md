@@ -29,16 +29,14 @@
 <h4>(4) 👪 팀원 소개 및 역할</h4>
 총 인원: 4명
 <markdown-accessiblity-table data-catalyst=""><table>
-<!-- <thead>
+<thead>
 <tr>
-<th align="center"><a href="https://www.flaticon.com/free-icons/girl" title="girl icons"></a></th>
-<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/재아.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/재아.png" width="100%" height="100" style="max-width: 100%;"></a></th>
-<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/라연.png"><img title="" src="/AtomicLiquors/senabo/raw/master/Documents/라연.png" width="100%" height="100" style="max-width: 100%;"></a></th>
-<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/소연.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/소연.png" width="100%" height="100" style="max-width: 100%;"></a></th>
-<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/종원.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/종원.png" width="100%" height="100" style="max-width: 100%;"></a></th>
-<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/효빈.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/효빈.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+<th align="center"><img src="https://github.com/user-attachments/assets/0830b381-6136-4f03-a09f-80a3cbcef0c8" alt="연정"></th>
+<th align="center"><img src="https://github.com/user-attachments/assets/e5ccb7c2-fd7f-4fcf-9c1e-5a6615e5b219" alt="현건"></th>
+<th align="center"><img src="https://github.com/user-attachments/assets/e55b478d-b952-4464-ad35-6d429b1768d6" alt="진석"></th>
+<th align="center"><img src="https://github.com/user-attachments/assets/af1c97ca-3d6e-42ce-9aa4-a065b8fd94a0" alt="율"></th>
 </tr>
-</thead> -->
+</thead>
 <tbody>
 <tr>
 <td align="center"><a href="https://github.com/Younjung58">박연정</a></td>
@@ -53,13 +51,15 @@
 <td align="center">팀원</td>
 </tr>
 <tr>
-<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>애니메이션 구현</td>
-<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>애니메이션 구현<br>디버깅 및 리팩토링</td>
-<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>DB 및 API 설계<br>디버깅 및 리팩토링</td>
-<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>DB 설계 및 API 개발<br>CI/CD 구축</td>
+<td align="center">DB설계 및 ERD작성<br>News, Daum API 설계 및 개발<br>spring security 및 소셜로그인 구현<br>디버깅 및 리팩토링</td>
+<td align="center">DB설계 및 ERD작성<br>게시판 전반적 기능 구현<br>엑셀-pdf다운로드 구현</td>
+<td align="center">DB설계 및 ERD작성<br>건강검진 기능 및 결과지 구현<br>kakao map API 설계 및 개발</td>
+<td align="center">DB설계 및 ERD작성<br>전박적 view의 제작<br>kakao map API 설계 및 개발</td>
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
+<h3>더욱 자세한 담당 업무 및 기간은 WBS를 참고해주세요😊😊</h3>
+
 
 <h4>요구사항 보러가기!</h4>
 <a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????</a>
