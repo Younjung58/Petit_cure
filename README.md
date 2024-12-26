@@ -56,18 +56,21 @@
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
-<h3><a href="https://docs.google.com/spreadsheets/d/1uosjk0E-rJUSYmFzgP4EMhxqU1z50nODCKyZT_XGQNA/edit?usp=sharing">더욱 자세한 담당 업무 및 기간은 WBS를 참고해주세요😊😊</br>(누르면 이동이 가능합니다.)</a></h3>
+<h3><a href="https://docs.google.com/spreadsheets/d/1uosjk0E-rJUSYmFzgP4EMhxqU1z50nODCKyZT_XGQNA/edit?usp=sharing">더욱 자세한 담당 업무 및 기간은 WBS로 확인하실수 있습니다.😊😊</br>(누르면 이동이 가능합니다.)</a></h3>
 
 <hr>
 <h3>💊 2. 주요 기능 및 설계</h3>
 <h4>(1) Main화면의 기본 디자인 설계</h4>
-<img src="https://github.com/user-attachments/assets/f5b786b0-7173-4c7a-b337-91ae8bf050c0">
+<img src="https://github.com/user-attachments/assets/f5b786b0-7173-4c7a-b337-91ae8bf050c0" width="width 30%" height="height 40%">
 <h4>(2) 주요 기능 및 요구사항</h4>
-
-<a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????(요구사항 상세 확인하기)</a>
+<h4>a. 비회원 / 회원의 기능</h4>
+<img src="https://github.com/user-attachments/assets/fb29d40a-d3a4-4177-bf61-06b26e34e40f">
+<h4>b. 관리자의 주요 기능</h4>
+<img src="https://github.com/user-attachments/assets/ed443dbc-001e-430b-8e60-13963dea5b04"></br>
+<h3><a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 클릭하시면 상세 요구사항을 확인하실 수 있습니다.😊😊</br>(누르면 이동이 가능합니다.)</a></h3>
 <h4>(3) ERD(다이아그램)</h4>
 <span>
-<b>총: 23개 테이블</b></br>
+<h4>총: 23개 테이블</h4>
 회원관리 - 3개</br>
 자유게시판 - 4개</br>
 Q&A게시판 - 4개</br>
@@ -81,7 +84,7 @@ Q&A게시판 - 4개</br>
 <spna>1. <b>View</b>의 제작</br>
          &nbsp;&nbsp;&nbsp; : html5, CSS3, Bootstrap를 사용한 정적디자인 / 타임리프, JSP를 사용한 동적 렌더링 /</br>
          &nbsp;&nbsp;&nbsp; JavaScript를 이용한 이벤트 핸들러처리, 테이블 형성 및 document의 요소 동적 생성 구현</spna>
-<div>2. 사용한 <b>API</b>는?? </br>
+<div>2. 사용한 <b>API</b></br>
   : 카카오 Map Api를 통한 건강 맞춤 추천 병원 지도를 구현 / Daum Api를 통한 주소 검색 기능 구현 / Kakao Api 통한 소셜 로그인 /
   &nbsp;&nbsp;&nbsp;News Api 통한 메인화면에 건강관련 뉴스코너를 구성</div>
 <div>3. <b>백엔드</b>의 구현 (크게 5가지로 분류) </br>
@@ -103,7 +106,24 @@ Q&A게시판 - 4개</br>
 <div display="inline">
 ✅IDEs : <img src="https://img.shields.io/badge/IntelliJ%20IDEAE-000000?style=for-the-badge&logo=EclipseIDE&logoColor=white" /><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white"/><img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=for-the-badge&logo=EclipseIDE&logoColor=white" />
 </div></br>
-
+</hr>
+<h3> 4. 실제 구현 영상 </h3>
+<p dir="auto">기능별 미리보기 영상입니다. 자세한 영상과 설명 시청은 각 기능별 링크를 통하여 가능합니다.</p>
+<markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th align="center">메인화면 기능</th>
+<th align="center">건강검진 CHECK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/2e6cd813-a018-46a0-a1a4-ab51325136aa">
+</td>
+<td><img src="https://github.com/user-attachments/assets/0e2eeaf0-fa37-43d6-917a-eb4c8baa460d"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
 
 
   <h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 PPT를 제작하였습니다. </br>(ppt링크 하단 첨부)</h3>
