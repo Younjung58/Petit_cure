@@ -1,14 +1,68 @@
-교육 과정 기간에 학습한 풀스택 기반의 Final 팀 프로젝트를 진행하였습니다.</br>
-<h3>-Spring framework의 MVC 패턴을 기반으로 한 Spring boot 웹 서비스 개발-</h3></br>
-팀원 - 총 4명</br>
-기간: 2024.11.18 ~ 2024.12.16 (총 28일)</br>
-주제: 개인 건강관리 맞춤 제공 서비스를 통한 사회적 인식 개선과 건강 증진을 위한 서비스 개발</br>
-주제 선정의 목표: </br>
-전공 및 의료 경력으로 쌓은 지식과 관련 전문 사이트를 참고하여 누구나 쉽게 자신의 건강을 이해하도록 도와줄 수 있는 우리만의 서비스를 구축해보자!
-</br></br>
-<h4>사용한 기술 스택</h4>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/fa45d546-5903-4208-b533-8c516b011636"></br>
+'Curevengers'의 풀스택 기반 Final 프로젝트</br>
+<h3>"작은 관심에서 오는 큰 건강!"</h3>
+</div>
+
+<!-- <h3>-Spring framework의 MVC 패턴을 기반으로 한 Spring boot 웹 서비스 개발-</h3></br> -->
+<div>
+<hr>
+<h3>📋 1. 프로젝트 소개</h3>
+<h4>(1) 💁‍♀ 제작 기간 및 주제 선정 </h4>
+<!-- 팀원 - 총 4명</br> -->
+기간: 2024.11.18 ~ 2024.12.16 (총 28일, 4주)</br></br>
+기획 배경: </br>
+현대 사회에서 건강에 대한 관심은 높아졌지만, 
+<b>"AHA 조사 결과, 한국이 50개국 중 뒤에서 5번째로, 건강에 대한 인식은 여전히 부족한 상황"</b>입니다. </br>
+따라서,
+❓개인의 건강관리 항목들을 전문으로 체크 해주고 관련 병원까지 연계함과 동시에, 관련 정보에 대하여 소통할 수 있는 장소를 제공해 주는 서비스가 있다면❓</br> 
+<b>= >"건강에 대한 인식이 높아지고 관리 소홀 문제가 해결되어, 결과적으로 건강한 사회가 만들어질 수 있다고 생각"</b>하여 우리들만의 서비스를 개발하고자 하였습니다. </br></br>
+주제: <b>"개인 건강관리 맞춤 제공 서비스를 통한 사회적 인식 개선과 건강 증진을 위한 서비스 개발"</b></br>
+<h4>(2) 💡 서비스의 기대효과 </h4>
+많은 사람들이 현재 개인의 건강상태에 대해 보다 잘 인지하며 
+그에 맞는 관리법 및 추천 병원의 방문을 통하여 다양한 질병을 초기에 예방할 수 있을 것입니다.</br>
+또한, 건강상태, 우울증과 관련된 고민과 경험을 안전하고 신뢰감 있게 공유할 수 있는 게시판의 운영으로, 다양한 건강 관련 정보와 정서적 지지를 얻고 고립감을 해소할 수 있을 것으로 기대합니다.
+</div>
+<h4>(3) 👩‍💻 사용한 기술 스택</h4>
 : Spring boot, Intellij, MariaDB, DBeaver, Mybatis, Visual Studio Code, Git</br>
 </br>
+<h4>(4) 👪 팀원 소개 및 역할</h4>
+총 인원: 4명
+<markdown-accessiblity-table data-catalyst=""><table>
+<!-- <thead>
+<tr>
+<th align="center"><a href="https://www.flaticon.com/free-icons/girl" title="girl icons"></a></th>
+<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/재아.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/재아.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/라연.png"><img title="" src="/AtomicLiquors/senabo/raw/master/Documents/라연.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/소연.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/소연.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/종원.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/종원.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+<th align="center"><a target="_blank" rel="noopener noreferrer" href="/AtomicLiquors/senabo/blob/master/Documents/효빈.png"><img src="/AtomicLiquors/senabo/raw/master/Documents/효빈.png" width="100%" height="100" style="max-width: 100%;"></a></th>
+</tr>
+</thead> -->
+<tbody>
+<tr>
+<td align="center"><a href="https://github.com/Younjung58">박연정</a></td>
+<td align="center"><a href="https://github.com/dlgusrjs940701">이현건</a></td>
+<td align="center"><a href="https://github.com/JinSeok0916">최진석</a></td>
+<td align="center"><a href="https://github.com/Yunyul841">윤 율</a></td>
+</tr>
+<tr>
+<td align="center">팀장</td>
+<td align="center">팀원</td>
+<td align="center">팀원</td>
+<td align="center">팀원</td>
+</tr>
+<tr>
+<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>애니메이션 구현</td>
+<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>애니메이션 구현<br>디버깅 및 리팩토링</td>
+<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>DB 및 API 설계<br>디버깅 및 리팩토링</td>
+<td align="center">UI/UX 기획 및 설계<br>Unity Asset 제작<br>DB 설계 및 API 개발<br>CI/CD 구축</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+
+<h4>요구사항 보러가기!</h4>
+<a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????</a>
 <h4>어떤 기술들을 실제 구현해보았나?</h4>
 <spna>1. View의 제작</br>
          &nbsp;&nbsp;&nbsp; : html5, CSS3, Bootstrap를 사용한 정적디자인 / 타임리프, JSP를 사용한 동적 렌더링 /</br>
