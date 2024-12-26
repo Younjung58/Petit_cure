@@ -62,9 +62,22 @@
 <h3>💊 2. 주요 기능 및 설계</h3>
 <h4>(1) Main화면의 기본 디자인 설계</h4>
 <img src="https://github.com/user-attachments/assets/f5b786b0-7173-4c7a-b337-91ae8bf050c0">
-<h4>(2) 요구사항 보러가기!</h4>
-<a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????</a>
-<h4>(3) 어떤 기술들을 실제 구현해보았나?</h4>
+<h4>(2) 주요 기능 및 요구사항</h4>
+
+<a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????(요구사항 상세 확인하기)</a>
+<h4>(3) ERD(다이아그램)</h4>
+<span>
+<b>총: 23개 테이블</b></br>
+회원관리 - 3개</br>
+자유게시판 - 4개</br>
+Q&A게시판 - 4개</br>
+우울증게시판 - 5개</br>
+건강검진 check - 2개</br>
+우울증 check - 1개</br>
+관리자 전용 - 4개</br></br>
+</span>
+<img src="https://github.com/user-attachments/assets/c630786b-523c-46ab-b1c8-6106325684ee" alt="ERD">
+<h4>(4) 어떤 기술들을 실제 구현해보았나?</h4>
 <spna>1. <b>View</b>의 제작</br>
          &nbsp;&nbsp;&nbsp; : html5, CSS3, Bootstrap를 사용한 정적디자인 / 타임리프, JSP를 사용한 동적 렌더링 /</br>
          &nbsp;&nbsp;&nbsp; JavaScript를 이용한 이벤트 핸들러처리, 테이블 형성 및 document의 요소 동적 생성 구현</spna>
