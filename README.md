@@ -106,25 +106,89 @@ Q&A게시판 - 4개</br>
 <div display="inline">
 ✅IDEs : <img src="https://img.shields.io/badge/IntelliJ%20IDEAE-000000?style=for-the-badge&logo=EclipseIDE&logoColor=white" /><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white"/><img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=for-the-badge&logo=EclipseIDE&logoColor=white" />
 </div></br>
-</hr>
-<h3> 4. 실제 구현 영상 </h3>
-<p dir="auto">기능별 미리보기 영상입니다. 자세한 영상과 설명 시청은 각 기능별 링크를 통하여 가능합니다.</p>
+<hr>
+<h3> 📼 4. 실제 구현 영상 </h3>
+<p dir="auto">기능별 미리보기 영상입니다. 자세한 영상과 설명 시청은 하단의 각 기능별 링크를 통하여 확인 가능합니다.</p>
 <markdown-accessiblity-table data-catalyst=""><table>
 <thead>
 <tr>
 <th align="center">메인화면 기능</th>
-<th align="center">건강검진 CHECK</th>
+<th align="center">회원가입 기능</th>
+<th align="center">로그인 기능</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><img src="https://github.com/user-attachments/assets/2e6cd813-a018-46a0-a1a4-ab51325136aa">
 </td>
-<td><img src="https://github.com/user-attachments/assets/0e2eeaf0-fa37-43d6-917a-eb4c8baa460d"></td>
+<td><img src="https://github.com/user-attachments/assets/5294b9fb-3934-4d3b-b4d5-18a884bab21b"></td>
+<td><img src="https://github.com/user-attachments/assets/8412140c-8be4-4d80-adb5-a882df7db6ec"></td>
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
-
-
-  <h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 PPT를 제작하였습니다. </br>(ppt링크 하단 첨부)</h3>
-  <h5>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h5>
+<markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th align="center">건강검진 CHECK</th>
+<th align="center">우울증 CHECK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/0e2eeaf0-fa37-43d6-917a-eb4c8baa460d">
+</td>
+<td><img src="https://github.com/user-attachments/assets/124fe820-cb7c-4275-bbe8-ba0f7c65ee83"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th align="center">카카오 회원가입 - 로그인 기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/35314266-dc86-42c1-a5dd-878a325dd908">
+</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+</table></markdown-accessiblity-table>
+<markdown-accessiblity-table data-catalyst=""><table>
+<thead>
+<tr>
+<th align="center">마이페이지 기능</th>
+<th align="center">관리자 신고 관리 - 정지 기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/user-attachments/assets/c827addf-b854-4500-8f65-4894c3c9b709">
+</td>
+<td><img src="https://github.com/user-attachments/assets/7699db94-ac60-4c2e-a821-e35afd7bfabf">
+</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3>👉👉<a href="https://youtu.be/OBIiHWSFoac">PETITCURE 기능 종합 버전 영상 및 설명 보러가기!!</a></h3>
+<h3>더 많은 기능 및 기능별 설명 자세히 보러가기!!</br>( -> 영상별 자막을 통한 설명이 추가되어 있습니다.)</h3>
+<a href="https://www.youtube.com/watch?v=en9syPim3Z4">(1) 기본 메인화면 보기!</a></br>
+<a href="https://www.youtube.com/watch?v=7DGF0gJPiAY">(2) 회원가입 기능 보기!</a></br>
+<a href="https://www.youtube.com/watch?v=icFCi6NpcXM">(3) 로그인 기능 보기 !</a></br>
+<a href="https://youtu.be/jzuRroEn6p8">(4) 자유게시판 기능 보기!</a></br>
+<a href="https://youtu.be/2qLPKIujQrM">(5) Q&A게시판 기능 보기! </br>
+&nbsp;&nbsp;&nbsp;    - 댓글제한</a></br>
+<a href="https://www.youtube.com/watch?v=z3MxpA2ZFKE">(6) 우울증 게시판 기능 보기!</br>
+&nbsp;&nbsp;&nbsp;   + 카카오 로그인</a></br>
+<a href="https://www.youtube.com/watch?v=EXJeOeM43WQ&feature=youtu.be">(7) 마이페이지 기능 보기!</br>
+&nbsp;&nbsp;&nbsp;(+ 회원 정보 수정 및 삭제)</a></br>
+<a href="https://youtu.be/TSHQcxzJQqY">(8) 건강검진 check 기능 보기!</a></br>
+<a href="https://youtu.be/ALDZ6Ou3t0U">(9) 우울증 check 기능 보기!</a></br>
+<a href="https://www.youtube.com/watch?v=_ev_hWKM8-o&feature=youtu.be">(10) 공지사항 관리 기능 보기!</a></br>
+<a href="https://youtu.be/qVKWJTnlVoE">(11) 탈퇴현황 관리 및 블랙리스트 기능 보기!</a></br>
+<a href="https://www.youtube.com/watch?v=w06MhWS4wvM">(12) 관리자 페이지 기능 보기!</a></br>
+<hr>
+<h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 아래의 PPT를 제작 및 발표를 진행하였습니다. </br>
+         (ppt링크 하단 첨부)</h3>
+<h5>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h5>
