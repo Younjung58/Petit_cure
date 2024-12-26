@@ -23,10 +23,8 @@
 그에 맞는 관리법 및 추천 병원의 방문을 통하여 다양한 질병을 초기에 예방할 수 있을 것입니다.</br>
 또한, 건강상태, 우울증과 관련된 고민과 경험을 안전하고 신뢰감 있게 공유할 수 있는 게시판의 운영으로, 다양한 건강 관련 정보와 정서적 지지를 얻고 고립감을 해소할 수 있을 것으로 기대합니다.
 </div>
-<h4>(3) 💻 사용한 기술 스택</h4>
-: Spring boot, Intellij, MariaDB, DBeaver, Mybatis, Visual Studio Code, Git</br>
 </br>
-<h4>(4) 👪 팀원 소개 및 역할</h4>
+<h4>(3) 👪 팀원 소개 및 역할</h4>
 총 인원: 4명
 <markdown-accessiblity-table data-catalyst=""><table>
 <thead>
@@ -58,24 +56,42 @@
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
-<h3>더욱 자세한 담당 업무 및 기간은 WBS를 참고해주세요😊😊</h3>
+<h3><a href="https://docs.google.com/spreadsheets/d/1uosjk0E-rJUSYmFzgP4EMhxqU1z50nODCKyZT_XGQNA/edit?usp=sharing">더욱 자세한 담당 업무 및 기간은 WBS를 참고해주세요😊😊</br>(누르면 이동이 가능합니다.)</a></h3>
 
+<hr>
+<h3>💊 2. 주요 기능 및 설계</h3>
+<h4>(1) Main화면의 기본 디자인 설계</h4>
 <img src="https://github.com/user-attachments/assets/f5b786b0-7173-4c7a-b337-91ae8bf050c0">
-<h4>요구사항 보러가기!</h4>
+<h4>(2) 요구사항 보러가기!</h4>
 <a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????</a>
-<h4>어떤 기술들을 실제 구현해보았나?</h4>
-<spna>1. View의 제작</br>
+<h4>(3) 어떤 기술들을 실제 구현해보았나?</h4>
+<spna>1. <b>View</b>의 제작</br>
          &nbsp;&nbsp;&nbsp; : html5, CSS3, Bootstrap를 사용한 정적디자인 / 타임리프, JSP를 사용한 동적 렌더링 /</br>
          &nbsp;&nbsp;&nbsp; JavaScript를 이용한 이벤트 핸들러처리, 테이블 형성 및 document의 요소 동적 생성 구현</spna>
-<div>2. 사용한 API는?? </br>
+<div>2. 사용한 <b>API</b>는?? </br>
   : 카카오 Map Api를 통한 건강 맞춤 추천 병원 지도를 구현 / Daum Api를 통한 주소 검색 기능 구현 / Kakao Api 통한 소셜 로그인 /
   &nbsp;&nbsp;&nbsp;News Api 통한 메인화면에 건강관련 뉴스코너를 구성</div>
-<div>3. 백엔드의 구현 (크게 5가지로 분류) </br>
+<div>3. <b>백엔드</b>의 구현 (크게 5가지로 분류) </br>
   - 3-1. 로그인: spring security통한 authority부여, 인증과 인가정책, oauth2 라이브러리 통한 소셜 로그인 구현, 유저디테일 및 핸들러의 커스텀</br>
   - 3-2. 회원가입: ajax를 통한 비동기 방식 구현(아이디 중복체크, 비밀번호 유효성 체크 등), spring-boot-starter-mail 라이브러리를 통한 이메일 인증 구현, Daum Api를 통한 주소 검색 및 저장 기능</br>
   - 3-3. 게시판: 타임리프 통한 동적 화면 구성, 추천-신고 기능등의 비동기 구현, 댓글 작성 및 수정의 암호화된 비밀번호 인증 처리, 페이징구현, 추천순-최신순으로의 데이터베이스 커스텀, 파일 첨부기능</br>
   - 3-4. 마이페이지: 최근 활동 정보 출력을 위한 데이터 정제 및 추출, JS의 테이블 tr-td 생성으로 화면 동적 생성, 회원의 정보 수정 및 삭제를 위한 2차 인증절차 및 url로의 접근 제한 구현</br>
   - 3-5. 관리자모드: spring security통한 authority부여, JS의 테이블 tr-td 생성으로 화면 동적 생성, 관리자가 조회할 수 있는 데이터의 커스텀 및 정제</br>
+<hr>
+<h3>💻 3. 개발 환경</h3>
+⚙️ 개발 환경
+<div display="inline">✅FRONTEND : <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"><div align="center"><img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=Thymeleaf&logoColor=white"><img src="https://img.shields.io/badge/Bootstrapap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/><img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white"/><img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"></div>
+  <br></div></br>
+<div display="inline">
+✅BACKEND : <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"><img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"><img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=Spring Security&logoColor=white"><img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black"/><img src="https://img.shields.io/badge/MyBatis-000000?style=for-the-badge&logo=MyBatis&logoColor=white"> 
+</div></br>
+<div display="inline">
+✅DATABASE : <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white"/><img src="https://img.shields.io/badge/dbeaver-gray?style=for-the-badge"></div></br>
+<div display="inline">
+✅IDEs : <img src="https://img.shields.io/badge/IntelliJ%20IDEAE-000000?style=for-the-badge&logo=EclipseIDE&logoColor=white" /><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=VisualStudioCode&logoColor=white"/><img src="https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=for-the-badge&logo=EclipseIDE&logoColor=white" />
+</div></br>
+
+
 
   <h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 PPT를 제작하였습니다. </br>(ppt링크 하단 첨부)</h3>
   <h5>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h5>
