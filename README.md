@@ -3,9 +3,14 @@
 'Curevengers'의 풀스택 기반 Final 프로젝트</br>
 <h3>"작은 관심에서 오는 큰 건강!"</h3>
 </div>
-
+<!--
+##목차</br>
+[1. 프로젝트 소개](#1-프로젝트-소개)
+[2. 개발 기간](#2-개발-기간)
+[3. 팀원 소개](#3-팀원-소개)-->
 <!-- <h3>-Spring framework의 MVC 패턴을 기반으로 한 Spring boot 웹 서비스 개발-</h3></br> -->
 <div>
+
 <hr>
 <h3>📋 1. 프로젝트 소개</h3>
 <h4>(1) 💁‍♀ 제작 기간 및 주제 선정 </h4>
@@ -189,6 +194,6 @@ Q&A게시판 - 4개</br>
 <a href="https://youtu.be/qVKWJTnlVoE">(11) 탈퇴현황 관리 및 블랙리스트 기능 보기!</a></br>
 <a href="https://www.youtube.com/watch?v=w06MhWS4wvM">(12) 관리자 페이지 기능 보기!</a></br>
 <hr>
-<h3>해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 아래의 PPT를 제작 및 발표를 진행하였습니다. </br>
+<h3>📣 5. 해당 과정을 통하여 프로젝트를 진행하고, 최종적으로 아래의 PPT를 제작 및 발표를 진행하였습니다. </br>
          (ppt링크 하단 첨부)</h3>
 <h5>https://www.canva.com/design/DAGZVvxtMYA/wBKJnaE-GkslEEP4kNPlJA/edit?utm_content=DAGZVvxtMYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</h5>
