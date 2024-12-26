@@ -23,7 +23,7 @@
 그에 맞는 관리법 및 추천 병원의 방문을 통하여 다양한 질병을 초기에 예방할 수 있을 것입니다.</br>
 또한, 건강상태, 우울증과 관련된 고민과 경험을 안전하고 신뢰감 있게 공유할 수 있는 게시판의 운영으로, 다양한 건강 관련 정보와 정서적 지지를 얻고 고립감을 해소할 수 있을 것으로 기대합니다.
 </div>
-<h4>(3) 👩‍💻 사용한 기술 스택</h4>
+<h4>(3) 💻 사용한 기술 스택</h4>
 : Spring boot, Intellij, MariaDB, DBeaver, Mybatis, Visual Studio Code, Git</br>
 </br>
 <h4>(4) 👪 팀원 소개 및 역할</h4>
@@ -60,7 +60,7 @@
 </table></markdown-accessiblity-table>
 <h3>더욱 자세한 담당 업무 및 기간은 WBS를 참고해주세요😊😊</h3>
 
-
+<img src="https://github.com/user-attachments/assets/f5b786b0-7173-4c7a-b337-91ae8bf050c0">
 <h4>요구사항 보러가기!</h4>
 <a href="https://docs.google.com/spreadsheets/d/16US4o8_Yy0UbsYzRZtFX-uC85ofW8f5_WLkOHVndZIU/edit?gid=0#gid=0">-> 과연 어떤 기능들을 구현할 것인가????</a>
 <h4>어떤 기술들을 실제 구현해보았나?</h4>
